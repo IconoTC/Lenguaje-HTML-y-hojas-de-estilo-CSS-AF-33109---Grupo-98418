@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web | Curso de HTML</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="logo.svg" type="image/svg+xml" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 1rem;
+      }
+      h1 {
+        color: #862b6d;
+      }
+      strong {
+        font-weight: normal;
+      }
+    </style>
+    <script>
+      // Ejemplo de JavaScript para mostrar un mensaje en la consola
+      console.log("Bienvenido al curso de HTML y CSS");
+    </script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>Lenguajes de la Web: HTML, CSS y JS</h1>
+    <p>
+      En esta demo incluimos ejemplos de los tres lenguajes fundamentales para
+      el desarrollo web.
+    </p>
+
+    <ul>
+      <li>HTML: Lenguaje de marcado para estructurar contenido.</li>
+      <li>CSS: Lenguaje de estilos para dar formato y diseño.</li>
+      <li>JS: Lenguaje de programación para interactividad y lógica.</li>
+    </ul>
+
+    <p>
+      HTML y CSS están estandarizados por el
+      <a href="https://www.w3.org/" target="_blank">
+        W3C (World Wide Web Consortium) </a
+      >, mientras que JS es estandarizado por
+      <a href="https://www.ecma-international.org/" target="_blank">
+        ECMA International </a
+      >.
+    </p>
+
+    <div>
+      <p>
+        El lenguaje <strong>HTML</strong> se utiliza para definir la estructura
+        y el contenido de la página web, como títulos, párrafos, enlaces e
+        imágenes.
+      </p>
+      <hr />
+      <p>
+        El lenguaje <strong>CSS</strong> se emplea para dar estilo a la página,
+        permitiendo controlar aspectos como colores, fuentes, márgenes y
+        disposición de los elementos.
+      </p>
+      <p>
+        Puede incluirse en archivos externos (como styles.css), en la sección
+        <code>&lt;head&gt;</code> con la etiqueta <code>&lt;style&gt;</code>, o
+        incluso de forma inline utilizando el atributo <code>style</code> en los
+        elementos HTML.
+      </p>
+    </div>
+    <div style="background-color: bisque">
+      <p>
+        El lenguaje <strong>JS</strong> permite agregar interactividad y lógica
+        a la página, como validación de formularios, animaciones y manipulación
+        del DOM.
+      </p>
+      <p>
+        Al igual que el CSS, el JavaScript puede incluirse en archivos externos
+        (como index.js), en la sección <code>&lt;head&gt;</code> con la etiqueta
+        <code>&lt;script&gt;</code>, o de forma inline utilizando el atributo
+        <code>onclick</code> u otros atributos de eventos en los elementos HTML.
+      </p>
+      <button onclick="alert('¡Hola! Has hecho clic en el botón.')">
+        Haz clic aquí
+      </button>
+    </div>
+  </body>
+</html>
