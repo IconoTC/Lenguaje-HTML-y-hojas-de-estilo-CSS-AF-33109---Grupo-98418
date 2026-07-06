@@ -62,13 +62,15 @@ Contenido del curso HTML5 Y CSS3 AF 75948 (25h)
 
 ### Dia 1 (Lunes 01/06/2026)
 
-<!-- - Presentación formador y alumnos. Curso
+
+- Presentación formador y alumnos. Curso
 - Requisitos técnicos
   - Navegador web actualizado (Google Chrome, ...)
   - Editor de código (Visual Studio Code, ...)
   - Repositorio GitHub
     - Documentación
     - Recursos y tools
+<!-- 
 - Introducción a HTML
   - Arquitectura de aplicaciones Web
   - El lenguaje HTML (demo-01)
