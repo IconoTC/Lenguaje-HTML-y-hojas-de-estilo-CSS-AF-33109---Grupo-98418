@@ -101,8 +101,6 @@ Contenido del curso HTML5 Y CSS3 AF 75948 (25h)
 
 ### Dia 2 (Martes 02/06/2026)
 
-<!--
-
 - Etiquetas principales de HTML (demo-05): Porfolio
   
 - Semántica en HTML5 y roles Aria
@@ -116,6 +114,7 @@ Contenido del curso HTML5 Y CSS3 AF 75948 (25h)
     - `<section>`: Agrupación temática de contenido.
     - `<article>`: Contenido independiente y autocontenible.
     - `<address>`: Información de contacto del autor o propietario de la página.
+    - `<aside>`: Contenido relacionado pero separado del contenido principal.
 
 - roles aria y aria-label
 - header y footer en secciones y artículos
@@ -124,26 +123,28 @@ Contenido del curso HTML5 Y CSS3 AF 75948 (25h)
 
 Otras etiquetas:
   - grouping
-    - listas: `<ul>`, `<ol>`, `<li>`
     - párrafos: `<p>`
-    - `<div>`: Contenedor genérico sin significado semántico específico (etiqueta de grouping).
-- enlaces (anchor): `<a>`: enlaces externos o internos a la página -->
-
-[descanso]
-<!-- 
-- Otras etiquetas de sectioning y grouping
-  - `<aside>`: Contenido relacionado pero separado del contenido principal.
-  - `<menu>` 
+    - listas: `<ul>`, `<ol>`, `<li>`, `<menu>` 
   - `<dl>`, `<dt>` and `<dd>`
+
+[descanso] 11:30 - 12:00
+
+- Otras etiquetas de sectioning y grouping
+  - `<div>`: Contenedor genérico sin significado semántico específico (etiqueta de grouping).
   - `<hr>` 
   - `<pre>` 
   - `<blockquote>`
+- enlaces (anchor): `<a>`: enlaces externos o internos a la página 
+
 
 - Text formatting:
   - `<strong>`: Texto importante.
   - `<em>`: Texto enfatizado.
   - `<small>`: Texto de menor importancia.
+  -` <span>`: Contenedor en línea sin significado semántico específico.
   - ...
+
+- Nueva página 'contactos': enlaces entre páginas
 
 - Embedding content:
   - `<img>`: Incrustación de imágenes en la página.
@@ -153,7 +154,9 @@ Otras etiquetas:
   - `<video>`: Reproducción de video.
   - `<audio>`: Reproducción de audio.
 
-- Nueva página 'contactos': enlaces entre páginas
+### Dia 3 (Miércoles 03/06/2026)
+
+<!-- (del día anterior)
 - Formularios:
   - `<form>`: Contenedor para elementos de formulario.
   - `<input>`: Campos de entrada de datos.
@@ -161,8 +164,6 @@ Otras etiquetas:
   - `<select>`: Menú desplegable.
   - `<button>`: Botón interactivo.
   - `<label>`: Etiqueta para elementos de formulario. -->
-
-### Dia 3 (Miércoles 03/06/2026)
 
 <!-- - Tablas en html
   - `<table>`: Contenedor para una tabla de datos.
