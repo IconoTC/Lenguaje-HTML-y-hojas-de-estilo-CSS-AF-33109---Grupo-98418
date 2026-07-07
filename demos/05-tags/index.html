@@ -9,6 +9,23 @@
       content="Curso de HTML y CSS: Lenguajes de la Web, Impartido on-line para Indra en Julio de 2026"
     />
     <link rel="shortcut icon" href="logo.svg" type="image/svg+xml" />
+    <style>
+      nav {
+        display: flex;
+        gap: 1rem;
+
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 1rem;
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    </style>
   </head>
 
   <!-- Etiquetas de sectioning:
@@ -25,13 +42,183 @@
     -->
 
   <body>
-    <h1>Porfolio de Pepe Pérez</h1>
+    <header aria-label="Cabecera de la página" id="cabecera">
+      <hgroup>
+        <h1>Porfolio de Pepe Pérez</h1>
+        <p>Desarrollador web</p>
+      </hgroup>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#mis-proyectos">Mis proyectos</a></li>
+          <li><a href="#mis-servicios">Mis servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>Sobre mí</h2>
+    <hr />
 
-    <h2>Mis proyectos</h2>
+    <main aria-label="Contenido principal">
+      <section aria-label="Sobre mí" id="sobre-mi">
+        <header>
+          <h2>Sobre mí</h2>
+          <nav>
+            <a href="#mis-aficiones">Mis aficiones</a>
+          </nav>
+        </header>
 
-    <h2>Contacto</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          quae accusantium veniam quam eos. Modi ipsa beatae eligendi, saepe
+          atque nesciunt odit laboriosam autem, in voluptatem distinctio sed
+          ducimus ad.
+        </p>
+        <p>
+          Soluta dicta sequi quo voluptatibus corrupti numquam temporibus
+          distinctio cupiditate harum quos eum fugit consequatur incidunt rerum
+          eius impedit consectetur, unde aliquid deserunt a sint vero. Id
+          ratione optio nostrum.
+        </p>
+        <p>
+          Doloremque voluptates deserunt at esse, eos quidem qui aspernatur
+          deleniti, magni odio illo repellat pariatur minima accusamus ad
+          doloribus, dolore veniam et officiis tenetur facere minus repellendus
+          velit! Tenetur, est?
+        </p>
+        <a href="#cabecera">Volver al inicio</a>
 
+        <h3 id="mis-aficiones">Mis aficiones</h3>
+
+        <p>
+          Hic, velit natus culpa eius non sapiente nam voluptatum animi libero,
+          ipsa nemo ut enim, voluptatem odit in provident perferendis reiciendis
+          asperiores praesentium dignissimos laboriosam! Nostrum ex repellendus
+          eveniet facere?
+        </p>
+        <p>
+          Et nesciunt, consequuntur quas doloremque, dolorem magnam qui quo,
+          officia expedita nisi facere eum accusamus. Fuga officia error odio
+          nihil molestias aut delectus, dolorem asperiores suscipit maxime in?
+          Placeat, beatae!
+        </p>
+
+        <a href="#cabecera">Volver al inicio</a>
+      </section>
+
+      <section aria-label="Mis proyectos" id="mis-proyectos">
+        <h2>Mis proyectos</h2>
+
+        <article aria-label="Proyecto 1">
+          <h3>Proyecto 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quia, quos voluptatibus quibusdam voluptatum
+            quibusdamque quae quidem quas. Quisquam, quod, quia, quos
+            voluptatibus quibusdam voluptatum quibusdamque quae quidem quas.
+          </p>
+        </article>
+        <article aria-label="Proyecto 2">
+          <header>
+            <hgroup>
+              <h3>Proyecto 2</h3>
+              <p>Trabajando con la empresa XYZ</p>
+            </hgroup>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum a
+            obcaecati nihil facere qui doloremque, aliquam quos fugiat unde rem
+            mollitia quaerat tenetur libero modi, dicta architecto. Illo, amet
+            obcaecati.
+          </p>
+          <p>
+            Nihil, deserunt unde exercitationem harum odit magnam a nostrum
+            dolores consectetur optio doloremque at voluptates. Dolorem, sint
+            laboriosam! Praesentium ullam sunt reiciendis asperiores iure enim
+            delectus suscipit? Omnis, ipsa. Expedita.
+          </p>
+          <footer>
+            <p>Publicado el 1 de enero de 2026</p>
+            <p>Copyright © 2026 XYZ</p>
+          </footer>
+        </article>
+        <article aria-label="Proyecto 3">
+          <h3>Proyecto 3</h3>
+          <p>
+            Blanditiis perspiciatis officiis exercitationem ex, ipsam quaerat
+            aspernatur dolores ullam, sapiente inventore iusto repellendus fuga
+            ducimus quae voluptatem laborum odit! Eum atque natus unde dicta
+            perferendis eos sequi maiores nostrum.
+          </p>
+          <p>
+            Voluptas corrupti autem amet officia commodi ipsum a officiis?
+            Aliquam non ut, quam animi autem nemo nesciunt quos magni ad dicta
+            dolorem adipisci tempora nam amet dolore cupiditate expedita!
+            Repellendus.
+          </p>
+        </article>
+        <a href="#cabecera">Volver al inicio</a>
+      </section>
+
+      <aside aria-label="Noticias de programación" id="noticias">
+        <h2>Noticias de programación</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum a
+          obcaecati nihil facere qui doloremque, aliquam quos fugiat unde rem
+          mollitia quaerat tenetur libero modi, dicta architecto. Illo, amet
+          obcaecati.
+        </p>
+        <p>
+          Nihil, deserunt unde exercitationem harum odit magnam a nostrum
+          dolores consectetur optio doloremque at voluptates. Dolorem, sint
+          laboriosam! Praesentium ullam sunt reiciendis asperiores iure enim
+          delectus suscipit? Omnis, ipsa. Expedita.
+        </p>
+      </aside>
+
+      <section aria-label="Mis servicios" id="mis-servicios">
+        <h2>Mis servicios</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum a
+          obcaecati nihil facere qui doloremque, aliquam quos fugiat unde rem
+          mollitia quaerat tenetur libero modi, dicta architecto. Illo, amet
+          obcaecati.
+        </p>
+        <p>
+          Nihil, deserunt unde exercitationem harum odit magnam a nostrum
+          dolores consectetur optio doloremque at voluptates. Dolorem, sint
+          laboriosam! Praesentium ullam sunt reiciendis asperiores iure enim
+          delectus suscipit? Omnis, ipsa. Expedita.
+        </p>
+        <p>
+          Blanditiis perspiciatis officiis exercitationem ex, ipsam quaerat
+          aspernatur dolores ullam, sapiente inventore iusto repellendus fuga
+          ducimus quae voluptatem laborum odit! Eum atque natus unde dicta
+          perferendis eos sequi maiores nostrum.
+        </p>
+        <p>
+          Voluptas corrupti autem amet officia commodi ipsum a officiis? Aliquam
+          non ut, quam animi autem nemo nesciunt quos magni ad dicta dolorem
+          adipisci tempora nam amet dolore cupiditate expedita! Repellendus.
+        </p>
+        <a href="#cabecera">Volver al inicio</a>
+      </section>
+
+      <section aria-label="Contacto" id="contacto">
+        <h2>Contacto</h2>
+        <address>
+          <p>Pepe Pérez</p>
+          <p>Desarrollador web</p>
+          <p>
+            <a href="mailto:pepe.perez@example.com">pepe.perez@example.com</a>
+          </p>
+        </address>
+      </section>
+      <a href="#cabecera">Volver al inicio</a>
+    </main>
+    <footer aria-label="Pie de página">
+      <p>© 2026 Pepe Pérez</p>
+    </footer>
   </body>
 </html>
