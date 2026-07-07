@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title>Etiquetas | Curso de HTML</title>
+    <title>Portfolio | Pepe Pérez</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -9,23 +9,7 @@
       content="Curso de HTML y CSS: Lenguajes de la Web, Impartido on-line para Indra en Julio de 2026"
     />
     <link rel="shortcut icon" href="logo.svg" type="image/svg+xml" />
-    <style>
-      nav {
-        display: flex;
-        gap: 1rem;
-
-        ul {
-          list-style: none;
-          display: flex;
-          gap: 1rem;
-        }
-        a {
-          text-decoration: none;
-          color: #000;
-          font-weight: bold;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <!-- Etiquetas de sectioning:
@@ -41,6 +25,19 @@
     10.address
     -->
 
+  <!-- Etiquetas de agrupamiento:
+      1. p
+      2. hr
+      3. pre
+      4. blockquote
+      5. ol and ul
+      6. menu
+      7. li
+      8. dl, dt and dd
+      9. figure and figcaption
+      10. main
+      11. div -->
+
   <body>
     <header aria-label="Cabecera de la página" id="cabecera">
       <hgroup>
@@ -48,17 +45,14 @@
         <p>Desarrollador web</p>
       </hgroup>
       <nav aria-label="Navegación principal">
-        <ul>
+        <menu>
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#mis-proyectos">Mis proyectos</a></li>
           <li><a href="#mis-servicios">Mis servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+          <li><a href="./contacts.html">Contacto</a></li>
+        </menu>
       </nav>
     </header>
-
-    <hr />
-
     <main aria-label="Contenido principal">
       <section aria-label="Sobre mí" id="sobre-mi">
         <header>
@@ -112,45 +106,146 @@
         <article aria-label="Proyecto 1">
           <h3>Proyecto 1</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quia, quos voluptatibus quibusdam voluptatum
-            quibusdamque quae quidem quas. Quisquam, quod, quia, quos
-            voluptatibus quibusdam voluptatum quibusdamque quae quidem quas.
+            Uns de las fases mas importantes es la
+            <em>instalación de la aplicación</em> y la configuración de los
+            parámetros iniciales.
           </p>
+
+          <figure>
+            <img src="https://placehold.co/600x400" width="600" height="400" />
+            <figcaption>Imagen de ejemplo para el proyecto 1</figcaption>
+          </figure>
+
+          <dl>
+            <dt>🧿 <strong>Desarrollo web</strong></dt>
+            <dd class="item-description">
+              <span class="first-word">Desarrollo</span> de aplicaciones web
+              utilizando HTML, CSS y JavaScript.
+            </dd>
+
+            <dt>🧿 <strong>Design de interfaces</strong></dt>
+            <dd class="item-description">
+              <span class="first-word">Creación</span> de interfaces de usuario
+              atractivas y funcionales.
+            </dd>
+
+            <dt>🧿 <strong>Optimización de rendimiento</strong></dt>
+            <dd class="item-description">
+              <span class="first-word">Mejora</span> del rendimiento de las
+              aplicaciones web para una experiencia de usuario más rápida.
+            </dd>
+          </dl>
         </article>
         <article aria-label="Proyecto 2">
           <header>
             <hgroup>
               <h3>Proyecto 2</h3>
-              <p>Trabajando con la empresa XYZ</p>
+              <p>Trabajando con la empresa zxx</p>
             </hgroup>
           </header>
+
+          <img
+            src="./assets/web-612x408.jpg"
+            alt="Imagen de ejemplo para el proyecto 2"
+            width="612"
+            height="408"
+          />
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum a
             obcaecati nihil facere qui doloremque, aliquam quos fugiat unde rem
             mollitia quaerat tenetur libero modi, dicta architecto. Illo, amet
             obcaecati.
           </p>
+
+          <pre>
+            const x = 10;
+            const y = 20;
+            console.log(x * y);
+          </pre>
+
           <p>
             Nihil, deserunt unde exercitationem harum odit magnam a nostrum
             dolores consectetur optio doloremque at voluptates. Dolorem, sint
             laboriosam! Praesentium ullam sunt reiciendis asperiores iure enim
             delectus suscipit? Omnis, ipsa. Expedita.
           </p>
+
+          <iframe
+            src="https://www.jsconf.es/"
+            width="600"
+            height="400"
+          ></iframe>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YQGBwI73CF8?si=Bp5FHcpwovXDZt3E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+
+          <p>
+            En HTML5 (año 2014) aprecen las etiqutas multimedia Vidio y Audio
+          </p>
+
+          <video
+            width="320"
+            height="240"
+            controls
+          >
+            <source
+              src="./assets/bec0f6c0-0d12-4d32-a4f5-a2735f4a5010_Fast_H1500.oog"
+              type="video/oog"
+            />
+            <source
+              src="./assets/bec0f6c0-0d12-4d32-a4f5-a2735f4a5010_Fast_H1500.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <audio
+            controls
+          >
+            <source
+              src="./assets/01-Intro.mp3"
+              type="audio/mpeg"
+            />
+            <source
+              src="./assets/bec0f6c0-0d12-4d32-a4f5-a2735f4a5010_Fast_H1500.mp4"
+              type="video/mp4"
+            />
+          </audio>
+
           <footer>
             <p>Publicado el 1 de enero de 2026</p>
-            <p>Copyright © 2026 XYZ</p>
+            <p>Copyright © 2026 zxx</p>
           </footer>
         </article>
         <article aria-label="Proyecto 3">
-          <h3>Proyecto 3</h3>
-          <p>
+          <h3>Proyecto 3 - Angular</h3>
+          <blockquote cite="https://angular.dev/" lang="en">
+            <p>The framework for building scalable web apps with confidence</p>
+            <cite>https://angular.dev/</cite>
+          </blockquote>
+
+          <p lang="zxx">
             Blanditiis perspiciatis officiis exercitationem ex, ipsam quaerat
             aspernatur dolores ullam, sapiente inventore iusto repellendus fuga
             ducimus quae voluptatem laborum odit! Eum atque natus unde dicta
             perferendis eos sequi maiores nostrum.
           </p>
-          <p>
+          <p lang="zxx">
             Voluptas corrupti autem amet officia commodi ipsum a officiis?
             Aliquam non ut, quam animi autem nemo nesciunt quos magni ad dicta
             dolorem adipisci tempora nam amet dolore cupiditate expedita!
@@ -162,7 +257,7 @@
 
       <aside aria-label="Noticias de programación" id="noticias">
         <h2>Noticias de programación</h2>
-        <p>
+        <p title="Noticia sobre la IA">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum a
           obcaecati nihil facere qui doloremque, aliquam quos fugiat unde rem
           mollitia quaerat tenetur libero modi, dicta architecto. Illo, amet
@@ -204,21 +299,23 @@
         </p>
         <a href="#cabecera">Volver al inicio</a>
       </section>
-
-      <section aria-label="Contacto" id="contacto">
-        <h2>Contacto</h2>
-        <address>
-          <p>Pepe Pérez</p>
-          <p>Desarrollador web</p>
-          <p>
-            <a href="mailto:pepe.perez@example.com">pepe.perez@example.com</a>
-          </p>
-        </address>
-      </section>
-      <a href="#cabecera">Volver al inicio</a>
     </main>
     <footer aria-label="Pie de página">
       <p>© 2026 Pepe Pérez</p>
+      <ul>
+        <li>
+          Mi principal red social
+          <a href="https://www.linkedin.com/in/pepeperez" target="_blank"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/pepeperez" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/pepeperez" target="_blank">Twitter</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
