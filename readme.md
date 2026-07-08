@@ -105,7 +105,7 @@ Contenido del curso HTML5 Y CSS3 AF 75948 (25h)
   
 - Semántica en HTML5 y roles Aria
 - Sectioning:
--   - `<header>`: Encabezado de una sección o página.
+    - `<header>`: Encabezado de una sección o página.
     - `<footer>`: Pie de página o sección.
     - `<main>`: Contenido principal de la página (etiqueta de grouping).
     - headings: `<h1>` a `<h6>`: Títulos y subtítulos de secciones.
@@ -134,8 +134,9 @@ Otras etiquetas:
   - `<hr>` 
   - `<pre>` 
   - `<blockquote>`
-- enlaces (anchor): `<a>`: enlaces externos o internos a la página 
 
+- enlaces (anchor): `<a>`: enlaces externos o internos a la página 
+- Nueva página 'contactos': enlaces entre páginas
 
 - Text formatting:
   - `<strong>`: Texto importante.
@@ -143,8 +144,6 @@ Otras etiquetas:
   - `<small>`: Texto de menor importancia.
   -` <span>`: Contenedor en línea sin significado semántico específico.
   - ...
-
-- Nueva página 'contactos': enlaces entre páginas
 
 - Embedding content:
   - `<img>`: Incrustación de imágenes en la página.
@@ -156,35 +155,37 @@ Otras etiquetas:
 
 ### Dia 3 (Miércoles 03/06/2026)
 
-<!-- (del día anterior)
+
 - Formularios:
   - `<form>`: Contenedor para elementos de formulario.
   - `<input>`: Campos de entrada de datos.
   - `<textarea>`: Área de texto multi-linear.
   - `<select>`: Menú desplegable.
   - `<button>`: Botón interactivo.
-  - `<label>`: Etiqueta para elementos de formulario. -->
+  - `<label>`: Etiqueta para elementos de formulario.
 
-<!-- - Tablas en html
+- Tablas en html
   - `<table>`: Contenedor para una tabla de datos.
   - `<tr>`: Fila de la tabla.
   - `<th>`: Celda de encabezado de la tabla.
   - `<td>`: Celda de datos de la tabla.
 
-- Elementos interactivos y multimedia
+- Elementos interactivos
   - De otros tipos: `<a>`, `<button>` (diferencias), `<input>` ...     
   - `<details>`: Contenido adicional que el usuario puede mostrar u ocultar.
   - `<summary>`: Resumen o título para el contenido de `<details>`.
   - `<dialog>`: Diálogo modal o ventana emergente.
   - JS: in-line v. scripts internos o externos
+  - atributo `popover`
+
+[descanso] 11:10 - 11:40
+
 
 - CSS
   - Concepto de CSS: propósito,
   - Inclusión de CSS en HTML: inline, interno, externo 
-  - Arquitectura de CSS: selectores, propiedades, valores, reglas, hojas de estilo -->
+  - Arquitectura de CSS: selectores, propiedades, valores, reglas, hojas de estilo 
 
-[descanso]
-<!-- 
 - Selectores CSS
   - Selectores básicos: por etiqueta, clase, id
   - Selectores de agrupación y descendencia
@@ -194,10 +195,16 @@ Otras etiquetas:
 
 - Especificidad y herencia de estilos
   - Reglas de especificidad: inline > id > clase > etiqueta
-  - Herencia de estilos: cómo los estilos se propagan a través del árbol DOM
-  - Resolución de conflictos: cómo se aplican los estilos cuando hay múltiples reglas que coinciden -->
 
 ### Dia 4 (Jueves 04/06/2026)
+
+<!-- Día anterior
+- Especificidad y herencia de estilos (2)
+  - Reglas de especificidad: inline > id > clase > etiqueta
+  - Herencia de estilos: cómo los estilos se propagan a través del árbol DOM
+  - Resolución de conflictos: cómo se aplican los estilos cuando hay múltiples reglas que coinciden  
+-->
+
 <!-- 
 - Elementos del lenguaje CSS
   - Pseudo-elementos: 
