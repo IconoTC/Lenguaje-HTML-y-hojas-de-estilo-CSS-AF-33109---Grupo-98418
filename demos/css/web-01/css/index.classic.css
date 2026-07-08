@@ -1,3 +1,4 @@
+
 /* 
 Comentarios en CSS 
 Multiples líneas
@@ -31,7 +32,7 @@ h1 {
 
 /* Selectores de clase */
 
-.sub-title {
+.sub-title {        
   /* color: #7d2b73; */
   font-size: 1.2rem;
   margin-top: 0;
@@ -52,9 +53,8 @@ h1 {
 }
 
 /* Varios selectores a la vez */
-.sub-title,
-h1 {
-  color: rgb(167, 27, 167);
+.sub-title, h1 {
+    color: rgb(167, 27, 167); 
 }
 
 /* Selectores de atributo */
@@ -70,80 +70,50 @@ textarea {
 }
 
 [target] {
-  color: rgb(41, 4, 105);
-  text-decoration: none;
+    color: rgb(41, 4, 105);
+    text-decoration: none;
 }
 
 /* Selectores combinados */
 
-/* hermanos siguientes: ~ */
 
-Body > header ~ section {
-  border: 2px solid rgb(126, 126, 126);
-  padding: 1rem;
-  margin: 1rem;
-}
 
-/* hermano siguiente adyacente + */
-
-Body > header + section {
-  background-color: bisque;
-}
-
-/* Anidamiento de selectores */
-
-/* Anidamiento y descendientes */
-
-nav {
-  ul {
+/* descendientes */
+nav ul {
     list-style-type: none;
-    li {
-      display: inline-block;
-      margin-right: 1rem;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-  }
 }
 
-/* Anidamiento + hijos o descendientes directos */
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
 
-body {
-  & > header {
+
+/* hijos o descendientes directos */
+
+nav > ul > li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+body > header {
     background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
 }
 
-/*Pseudo-elementos */
+/* hermanos siguientes: ~ */
 
-section {
-  p::first-letter {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #7d2b73;
-  }
-
-  li::marker {
-    color: #7d2b73;
-    font-size: 1.5rem;
-  }
+Body > header ~ section {
+    border: 2px solid rgb(126, 126, 126);
+    padding: 1rem;
+    margin: 1rem;
 }
 
-/* Pseudo-clases */
-nav {
-  a:hover {
-    color: #d53030;
-    text-decoration: underline;
-  }
-}
 
-section {  
-  li:nth-child(2n) {
-    background-color: #f9f9f9;
-  }
+/* hermano siguiente adyacente + */
+
+Body > header + section {
+    background-color: bisque;
 }
