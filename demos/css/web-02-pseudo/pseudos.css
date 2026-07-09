@@ -1,39 +1,63 @@
-a:hover::after {
+p::first-line {
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* a[href]::after { */
+p.ocultar:hover::after {
+  content: "👍";
+  text-decoration: none;
+}
+/* a:hover::after {
     content: '👍';
+}
+*/
+
+label {
+    display: block;
+}
+
+label:has(input:required)::after {
+    content: '*';
+    font-size: 1.8rem;
+    padding-left: 0.3rem;
+    color: red;
+    position: relative;
+    top:  0.65rem;
 }
 
 section {
+    margin: 1rem 0;
     position: relative;
 }
 
 section::after {
     content: '';
-    background-color: rgba(137, 43, 226, 0.32);
+    background-color: rgba(137, 43, 226, 0.237);
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
-}
+} 
 
 /* summary::marker, li::marker  */
 :is(summary, li)::marker {
-    color: brown;
-    font-size: 1.3rem;
+  color: brown;
+  font-size: 1.3rem;
 }
 
+/* section #uno{} */
 section[aria-label="uno"] {
-    display: none;
+  display: none;
 }
 
 section[aria-label="uno"]:target {
-    display: block;
-    border: 2px solid gainsboro;
+  display: block;
+  border: 2px solid gainsboro;
 }
 
-section[aria-label="sample"]  {
-    p::first-line {
-        font-weight: bold;
-    }
+li:nth-child(2n) {
+  background-color: rgba(137, 43, 226, 0.237);
 }
