@@ -155,7 +155,6 @@ Otras etiquetas:
 
 ### Dia 3 (Miércoles 03/06/2026)
 
-
 - Formularios:
   - `<form>`: Contenedor para elementos de formulario.
   - `<input>`: Campos de entrada de datos.
@@ -173,13 +172,12 @@ Otras etiquetas:
 - Elementos interactivos
   - De otros tipos: `<a>`, `<button>` (diferencias), `<input>` ...     
   - `<details>`: Contenido adicional que el usuario puede mostrar u ocultar.
-  - `<summary>`: Resumen o título para el contenido de `<details>`.
+    - `<summary>`: Resumen o título para el contenido de `<details>`.
   - `<dialog>`: Diálogo modal o ventana emergente.
   - JS: in-line v. scripts internos o externos
   - atributo `popover`
 
 [descanso] 11:10 - 11:40
-
 
 - CSS
   - Concepto de CSS: propósito,
@@ -198,14 +196,13 @@ Otras etiquetas:
 
 ### Dia 4 (Jueves 04/06/2026)
 
-<!-- Día anterior
+
 - Especificidad y herencia de estilos (2)
   - Reglas de especificidad: inline > id > clase > etiqueta
   - Herencia de estilos: cómo los estilos se propagan a través del árbol DOM
   - Resolución de conflictos: cómo se aplican los estilos cuando hay múltiples reglas que coinciden  
--->
 
-<!-- 
+
 - Elementos del lenguaje CSS
   - Pseudo-elementos: 
     - `::first-letter`, 
@@ -224,28 +221,37 @@ Otras etiquetas:
     - Funciones CSS: `calc()`, `var()`, `rgb()`, ...
     - Paletas de colores
     - Escala de tamaños para la tipografía
+
+[descanso] 11:30 - 12:00
+
     - Guías de estilo (Style Guides)
-    - Hojas de CSS básicas -->
+    - Hojas de CSS básicas 
 
-[descanso] 11:10 - 11:40
 
-<!-- - Elementos del lenguaje CSS (continuación)
+- Elementos del lenguaje CSS (continuación)
   - Unidades de medida en CSS
-    - Absolutas: `px`, `cm`, `mm`, `in`, `pt`, `pc`
+    - Absolutas: `cm`, `mm`, `in`, `pt`, `pc`
+    - Absolutas (por dispositivo): `px` 
     - Relativas: `%`, `em`, `rem`, `vw`, `vh`, `vmin`, `vmax`
     - Rem vs Em
   
+
 - Diseño (Layout) de páginas web con CSS
+
   - Box model: contenido, padding, border, margin
     - Box-sizing: content-box vs border-box
   - Display: block, inline, inline-block, none
   - Layouts clásicos: float, clear, inline-block
-  - Flexbox: diseño flexible para contenedores y elementos hijos -->
-
+  - Flexbox: diseño flexible
+    - contenedores
 
 ### Dia 5 (Viernes 05/06/2026)
 
-<!-- - Diseño (Layout) de páginas web con CSS
+<!-- 
+
+- Diseño (Layout) de páginas web con CSS
+  - Flexbox (continuación): diseño flexible para contenedores y 
+    - elementos hijos
   - Grid: diseño de cuadrícula para organizar elementos en filas y columnas  -->
 
 [descanso] 11:00 - 11:30
