@@ -1,0 +1,74 @@
+@import "reset.css";
+
+
+:root {
+  /* Paleta de colores */
+  --color-primary: black;
+  --color-secondary: bisque;
+  --back-color-primary: var(--color-secondary);
+  --back-color-secondary: brown;
+  --back-color-accent: rgb(86, 45, 45);
+
+  --font-primary:
+    "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  --scala: 1.3;
+  --base: 1rem;
+
+  --size-x-large: calc(var(--size-large) * var(--scala));
+  --size-large: calc(var(--size-medium) * var(--scala));
+  --size-medium: calc(var(--size-normal) * var(--scala));
+  --size-normal: var(--base);
+  --size-small: calc(var(--size-normal) / var(--scala));
+  --size-x-small: calc(var(--size-small) / var(--scala));
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+header {
+  background-color: var(--back-color-primary);
+  color: var(--color-primary);
+  height: 4rem;
+}
+header,
+main {
+  padding-inline: 1rem;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+h1, .h1 {
+    font-size: var(--size-x-large);
+    
+}
+
+h2, .h2 {
+    font-size: var(--size-large);
+}
+
+h3, .h3 {
+    font-size: var(--size-medium);
+}
+
+h4, .h4 {
+    font-size: var(--size-normal);
+}
+
+h5, .h5 {
+    font-size: var(--size-small);
+}
+
+
+h6, .h6 {
+    font-size: var(--size-x-small);
+}
+
+p {
+    font-size: var(--size-normal);
+}
