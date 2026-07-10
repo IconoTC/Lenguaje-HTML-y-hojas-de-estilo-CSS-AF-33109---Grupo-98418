@@ -2,6 +2,11 @@
 
 body {
     background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 100vh;
 }
 
 header,
@@ -18,17 +23,40 @@ section {
 
 header,
 footer {
-    min-height: 20vh;
+   flex: 0 1 10vh;
 }
 
 main {
-    min-height: 60vh;
+    /* Propiedades como item flexible */
+    flex: 1 1 auto;
+
+
+   /* Propiedades como contenedor flex */
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: space-around;
-    /* min-height: 60vh;  */
+    /* justify-content: space-around;
     align-items: center;
-
     align-content: space-around;
+     */
+    /* min-height: 60vh;  */
+
+     section:nth-child(1) {
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+        flex: 0 1 auto;
+    }
+
+     section:nth-child(2) {
+        order: 1;
+        flex: 3 1 auto;
+    }
+
+
+     section:nth-child(3) {
+        order: 1;
+        flex: 1 1 auto;
+    }
+
 }
