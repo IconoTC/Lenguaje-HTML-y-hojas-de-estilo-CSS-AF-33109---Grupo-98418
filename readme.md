@@ -213,7 +213,7 @@ Otras etiquetas:
   - Pseudo-clases: 
     - `:target`,
     - `:hover`, 
-    - `:focus`, 
+    - `:focus-visible`, 
     - `:nth-child()`, ...
 
   - Variables y funciones CSS
@@ -225,8 +225,7 @@ Otras etiquetas:
 [descanso] 11:30 - 12:00
 
     - Guías de estilo (Style Guides)
-    - Hojas de CSS básicas 
-
+    - Hojas de CSS básicas
 
 - Elementos del lenguaje CSS (continuación)
   - Unidades de medida en CSS
@@ -234,7 +233,6 @@ Otras etiquetas:
     - Absolutas (por dispositivo): `px` 
     - Relativas: `%`, `em`, `rem`, `vw`, `vh`, `vmin`, `vmax`
     - Rem vs Em
-  
 
 - Diseño (Layout) de páginas web con CSS
 
@@ -247,30 +245,28 @@ Otras etiquetas:
 
 ### Dia 5 (Viernes 05/06/2026)
 
-<!-- 
-
 - Diseño (Layout) de páginas web con CSS
   - Flexbox (continuación): diseño flexible para contenedores y 
     - elementos hijos
-  - Grid: diseño de cuadrícula para organizar elementos en filas y columnas  -->
+  - Grid: diseño de cuadrícula para organizar elementos en filas y columnas 
 
 [descanso] 11:00 - 11:30
 
-<!-- - Encuesta: <>
+- Encuesta: <https://forms.cloud.microsoft/pages/responsepage.aspx?id=tA7tEz6_F0GYpeEuIOyC74dmltakDyZNkCB0fAWABS1URDVXNlRLSzZRRDI3VjNVSFJISkoyRkRITSQlQCN0PWcu&route=shorturl>
+
 
 - Position: static, relative, absolute, fixed & anchors
+- Columns (propiedad de CSS)
 
 - Responsive Web Design (RWD)
+  
   - Media queries: diseño adaptativo para diferentes tamaños de pantalla
   - Enfoques de diseño:
     - Mobile-first
     - Desktop-first
     - Mobile-only
   - Mobile-first design: enfoque de diseño que prioriza la experiencia móvil
-    - Menus hamburguesa
+    - Cambios de display (e.g. Menus hamburguesa)
+
   - CSS Dinámico
     - Transformaciones, transiciones y animaciones
-  - Theme selector solo con CSS: has()
-  - Recortes de imágenes: shape-outside
-
--->
