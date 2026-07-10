@@ -26,6 +26,11 @@ label:has(input:required)::after {
     top:  0.65rem;
 }
 
+input:focus-visible {
+    outline: 2px solid blue;
+    /* outline-offset: 0.3rem; */
+}
+
 section {
     margin: 1rem 0;
     position: relative;
